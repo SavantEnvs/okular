@@ -1,0 +1,8 @@
+project: savantenvs/okular
+target: fax
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fax/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_fax
+    libfuzzer: true

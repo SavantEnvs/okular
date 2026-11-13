@@ -1,0 +1,8 @@
+project: savantenvs/okular
+target: md
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/md/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_md
+    libfuzzer: true

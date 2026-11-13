@@ -1,0 +1,8 @@
+project: savantenvs/okular
+target: fb2
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fb2/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_fb2
+    libfuzzer: true
